@@ -113,7 +113,7 @@ td {
 
 .pp {
   border-radius: 100%;
-  border: 2px solid black;
+  border: 1px solid #0d685e;
   height: 150px;
   width: 150px;
 }

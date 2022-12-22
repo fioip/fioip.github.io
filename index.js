@@ -1,6 +1,6 @@
 var skillsEl = document.getElementById("skills-list");
 
-var skills = ["HTML", "CSS", "JS"];
+var skills = ["HTML", "CSS", "JS", "Drive", "Photoshop"];
 
 var skillsHTML = "";
 
