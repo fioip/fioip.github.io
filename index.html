@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <img src="fio.jpeg" alt="Img nunta" class="pp" />
+
+        <h1>Iuhasz P. Fiona</h1>
+
+        <h2 id="job-title">
+          Student at Ieti - Calculatoare @ fotograf @ gamer
+        </h2>
+
+        <p
+          style="
+            color: red;
+            text-align: center;
+            text-decoration-line: underline;
+            font-size: 200%;
+            font-weight: bold;
+          "
+        >
+          <strong>Welcome</strong> to my site
+        </p>
+      </div>
+      <ul id="top-menu-bar">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Known Languages</a></li>
+        <li><a href="#">Projects</a></li>
+      </ul>
+    </header>
+
+    <section id="content">
+      <div id="side-menu">
+        <section>
+          <form action="">
+            <div>
+              <label for="subscriberEmail">
+                <strong> Enter yor Email: </strong></label
+              ><br />
+              <input
+                type="email"
+                name="email"
+                id="subscriberEmail"
+                required
+                placeholder="your@email.com"
+              />
+            </div>
+
+            <div>
+              <label for="subscriber"
+                ><strong> Enter your name: </strong></label
+              >
+              <input
+                type="text"
+                name="nume"
+                id="subscriber"
+                required
+                placeholder="Full Name"
+              />
+            </div>
+            <button type="submit" class="sbutton">Subscribe</button>
+          </form>
+        </section>
+
+        <br />
+        <section>To Do - Coming Soon</section>
+      </div>
+
+      <div id="main">
+        <div class="page">
+          <h2>Skills</h2>
+          <ul id="skills-list"></ul>
+          <!--  
+          <ol>
+            <li class="favorite">HTML</li>
+            <li class="favorite">CSS</li>
+            <li>JS</li>
+          </ol>
+          -->
+        </div>
+
+        <div class="page">
+          <h2>Known languages</h2>
+
+          <table border="1">
+            <tr>
+              <th>Language</th>
+              <th>Level</th>
+            </tr>
+            <tr>
+              <td>Romanian</td>
+              <td>Native</td>
+            </tr>
+            <tr>
+              <td>Hungarian</td>
+              <td>Conversation level</td>
+            </tr>
+            <tr>
+              <td>English</td>
+              <td>C1</td>
+            </tr>
+            <tr>
+              <td>German</td>
+              <td>Begginer</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <a
+        class="fuzzy"
+        target="_blank"
+        href="https://en.wikipedia.org/wiki/Fuzzy_logic"
+        >Fuzzy Logic - AI</a
+      >
+    </footer>
+
+    <script src="index.js"></script>
+    <!-- <script>
+      console.info("Page loaded");
+      console.error(2 * 3 + 1);
+      console.warn(2 * (3 + 1));
+
+      var employed = false;
+      console.info("Employed?", employed);
+      console.info("Type of var:", typeof employed);
+
+      var age = 18;
+      console.info("Age?", age);
+      console.info("Type of var:", typeof age);
+
+      var userName = "Fiona";
+      userName = "Riana " + userName;
+      console.info("Username:", userName);
+      console.info("Type of var:", typeof userName);
+
+      var skills = ["html", "css", "js"];
+      console.info("Skills?", skills);
+      console.info("Type of var:", typeof skills);
+
+      var fio = {
+        age: 18,
+        employed: true,
+        skills: ["html", "css", `js`],
+      };
+
+      var jobTitle = document.getElementById("job-title");
+      // jpbTitle = dom - document object model
+    </script> -->
+  </body>
+</html>

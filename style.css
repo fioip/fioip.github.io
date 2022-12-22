@@ -1,0 +1,161 @@
+/* header,
+footer,
+#content {
+  padding: 4px;
+  margin: 2px;
+  border: 5px solid #2196f3;
+  background-color: #d3eafd;
+}
+
+#content > div,
+#side-menu > section {
+  padding: 4px;
+  margin: 2px;
+  border: 2px solid red;
+}
+
+#side-menu > section {
+  border-color: green;
+} */
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  background-color: #f3f2ef;
+  display: flex;
+  flex-direction: column;
+}
+
+#content {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+#side-menu {
+  flex: 1;
+}
+
+#main {
+  flex: 2;
+  padding-left: 1%;
+}
+
+td {
+  color: crimson;
+  border-color: red;
+  font-weight: bold;
+  border-radius: 7px;
+  border-width: 2px;
+}
+
+#subscriberEmail {
+  margin: 10px 0px 10px 0px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 3px solid #0d685e;
+}
+
+#subscriber {
+  margin: 10px 0px 10px 0px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 3px solid #0d685e;
+}
+
+.sbutton {
+  border-radius: 10px;
+  border: 3px solid #0d685e;
+  background-color: #fff;
+}
+
+#job-title {
+  text-align: center;
+  font-style: italic;
+  color: rgb(4, 116, 78);
+  font-size: large;
+}
+
+.favorite {
+  color: green;
+  font-weight: bold;
+}
+
+.page {
+  border: 2px #e0dfdc solid;
+  background-color: #ffffff;
+  margin-right: 50%;
+  padding: 2%;
+  margin-bottom: 2%;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 15%), 0 2px 3px rgb(0 0 0 / 20%);
+}
+
+#top-menu-bar {
+  text-align: center;
+  background-color: #0d685e;
+  color: #fff;
+  margin: 0;
+  padding: 0.5%;
+}
+
+.head {
+  padding-left: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.pp {
+  border-radius: 100%;
+  border: 2px solid black;
+  height: 150px;
+  width: 150px;
+}
+
+#top-menu-bar li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+#top-menu-bar a {
+  text-decoration: none;
+  padding: 5px 8px;
+  color: #fff;
+  display: inline-block;
+  font-size: 18px;
+  transition: 0.5s;
+  text-shadow: -1px 1px hsl(0deg 0% 50% / 90%);
+}
+
+#top-menu-bar a:visited {
+  color: #fff;
+}
+
+#top-menu-bar a:hover {
+  color: #0d685e;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.fuzzy {
+  text-decoration: none;
+  padding: 5px 8px;
+  color: #0d685e;
+  display: inline-block;
+  font-size: 18px;
+  transition: 0.5s;
+  text-shadow: -1px 1px rgba(15, 158, 113, 0.9);
+}
+
+a.fuzzy:hover {
+  color: #fff;
+  background-color: #0d685e;
+  border-radius: 3px;
+}
