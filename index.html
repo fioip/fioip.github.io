@@ -60,38 +60,47 @@
 
         <br />
         <section>
-          <!-- <button class="btn">Hello World!</button> -->
-            <div class="container">
-              <div class="coffee-header">
-                <div class="coffee-header__buttons coffee-header__button-one"></div>
-                <div class="coffee-header__buttons coffee-header__button-two"></div>
-                <div class="coffee-header__display"></div>
-                <div class="coffee-header__details"></div>
-              </div>
-              <div class="coffee-medium">
-                <div class="coffe-medium__exit"></div>
-                <div class="coffee-medium__arm"></div>
-                <div class="coffee-medium__liquid"></div>
-                <div class="coffee-medium__smoke coffee-medium__smoke-one"></div>
-                <div class="coffee-medium__smoke coffee-medium__smoke-two"></div>
-                <div class="coffee-medium__smoke coffee-medium__smoke-three"></div>
-                <div class="coffee-medium__smoke coffee-medium__smoke-for"></div>
-                <div class="coffee-medium__cup"></div>
-              </div>
-              <div class="coffee-footer"></div>
+          <div class="container">
+            <div class="coffee-header">
+              <div
+                class="coffee-header__buttons coffee-header__button-one"
+              ></div>
+              <div
+                class="coffee-header__buttons coffee-header__button-two"
+              ></div>
+              <div class="coffee-header__display"></div>
+              <div class="coffee-header__details"></div>
             </div>
+            <div class="coffee-medium">
+              <div class="coffe-medium__exit"></div>
+              <div class="coffee-medium__arm"></div>
+              <div class="coffee-medium__liquid"></div>
+              <div class="coffee-medium__smoke coffee-medium__smoke-one"></div>
+              <div class="coffee-medium__smoke coffee-medium__smoke-two"></div>
+              <div
+                class="coffee-medium__smoke coffee-medium__smoke-three"
+              ></div>
+              <div class="coffee-medium__smoke coffee-medium__smoke-for"></div>
+              <div class="coffee-medium__cup"></div>
+            </div>
+            <div class="coffee-footer"></div>
+          </div>
         </section>
       </div>
 
       <div id="main">
-        <div class="page">
+        <!-- HOME -->
+        <div id="home" class="page">
           <h2 class="page-heading">HOME</h2>
           <div class="main-text">
-           <h3 class="skills-head">Hi there!</h3>
-            <p>This page is about me, an 18 year old student who likes to take photos and would like that passion to be a further job.</p>
+            <h3 class="skills-head">Hi there!</h3>
+            <p>
+              This page is about me, an 18 year old student who likes to take
+              photos and would like that passion to be a further job.
+            </p>
             <p>Also, this thing with web dev would be a cool job, ngl 😊</p>
 
-            <h3 class="skills-head"">Small details about me:</h3>
+            <h3 class="skills-head">Small details about me:</h3>
             <ul id="meDetails">
               <li>love cats</li>
               <li>my cat is 12</li>
@@ -106,22 +115,112 @@
 
             <div>
               <span class="hovertext" data-hover="My cat">
-              <img src="myCat.jpg" style="height: 175px; width: 250px;">
+                <img src="myCat.jpg" style="height: 175px; width: 250px" />
               </span>
             </div>
+
             <div>
               <span class="hovertext" data-hover="Gamer">
-              <img src="gamer.jpg" style="height: 175px; width: 250px;">
+                <img src="gamer.jpg" style="height: 175px; width: 250px" />
               </span>
             </div>
+
             <div>
               <span class="hovertext" data-hover="Photographer">
-              <img src="photographer.jpeg" style="height: 175px; width: 250px;">
+                <img
+                  src="photographer.jpeg"
+                  style="height: 175px; width: 250px"
+                />
               </span>
             </div>
-        </div>
+          </div>
         </div>
 
+        <!-- SKILLS -->
+
+        <div id="skills" class="page">
+          <h2 class="page-heading">Skills</h2>
+          <h4 class="skills-head">Programming skills:</h4>
+          <ul id="skills-list"></ul>
+          <img src="html_logo.png" alt="html-logo" class="logos" />
+          <img src="css_logo.png" alt="css_logo" class="logos" />
+          <img src="js_logo.png" alt="js_logo" class="logos" />
+          <img src="php_logo.png" alt="php_logo" class="logos" />
+          <img src="bootstrap_logo.jpg" alt="bootstrap_logo" class="logos" />
+
+          <h4 class="skills-head">Photography skills:</h4>
+          <ul id="skills-list-photo"></ul>
+
+          <div>
+            <span class="hovertext" data-hover="Wedding">
+              <img src="wedding.jpg" style="height: 175px; width: 250px" />
+            </span>
+          </div>
+
+          <div>
+            <span class="hovertext" data-hover="Macro">
+              <img src="macro.jpg" style="height: 175px; width: 250px" />
+            </span>
+          </div>
+
+          <div>
+            <span class="hovertext" data-hover="Christening">
+              <img src="christing.jpg" style="height: 175px; width: 250px" />
+            </span>
+          </div>
+
+          <div>
+            <span class="hovertext" data-hover="Portrait">
+              <img src="portrait2.jpg" style="height: 175px; width: 250px" />
+            </span>
+          </div>
+
+          <div>
+            <span class="hovertext" data-hover="Landscape">
+              <img src="landscape.jpg" style="height: 175px; width: 250px" />
+            </span>
+          </div>
+
+          <div>
+            <span class="hovertext" data-hover="Festivals">
+              <img src="festivals.jpg" style="height: 175px; width: 250px" />
+            </span>
+          </div>
+        </div>
+
+        <!-- Languages -->
+
+        <div id="known-languages" class="page">
+          <h2 class="page-heading">KNOWN LANGUAGES</h2>
+          <table>
+            <tr>
+              <th>Language</th>
+              <th>Level</th>
+            </tr>
+            <tr>
+              <td>Romanian</td>
+              <td>Native</td>
+            </tr>
+            <tr>
+              <td>Hungarian</td>
+              <td>Conversation level</td>
+            </tr>
+            <tr>
+              <td>English</td>
+              <td>C1</td>
+            </tr>
+            <tr>
+              <td>German</td>
+              <td>Begginer</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- Photography -->
+      <div id="photography" class="page">
+        <h2 class="page-heading">PHOTOGRAPHY</h2>
+      </div>
     </section>
 
     <footer class="f">

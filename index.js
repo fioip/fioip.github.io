@@ -30,3 +30,5 @@ for (i = 0; i < skillsP.length; i++) {
 }
 
 skillsElP.innerHTML = skillsHTMLP;
+
+document.getElementById("home").style.display = "block";

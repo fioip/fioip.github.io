@@ -104,6 +104,7 @@ table {
 }
 
 .page {
+  display: none;
   height: 100%;
   border: 2px #e0dfdc solid;
   background-color: #ffffff;
