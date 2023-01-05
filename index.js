@@ -32,30 +32,34 @@ for (i = 0; i < skillsP.length; i++) {
 skillsElP.innerHTML = skillsHTMLP;
 
 function hideAllPages() {
-  document.getElementById("home").style.display = "none";
   document.getElementById("skills").style.display = "none";
   document.getElementById("languages").style.display = "none";
+  document.getElementById("home").style.display = "none";
   document.getElementById("photography").style.display = "none";
+}
+
+function show(id) {
+  document.getElementById(id).style.display = "block";
 }
 
 function displayHome() {
   hideAllPages();
-  document.getElementById("home").style.display = "block";
+  show("home");
 }
 
 function displaySkills() {
   hideAllPages();
-  document.getElementById("skills").style.display = "block";
+  show("skills");
 }
 
 function displayLanguages() {
   hideAllPages();
-  document.getElementById("languages").style.display = "block";
+  show("languages");
 }
 
 function displayPhotography() {
   hideAllPages();
-  document.getElementById("photography").style.display = "block";
+  show("photography");
 }
 
 displayHome();
