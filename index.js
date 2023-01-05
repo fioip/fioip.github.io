@@ -31,32 +31,30 @@ for (i = 0; i < skillsP.length; i++) {
 
 skillsElP.innerHTML = skillsHTMLP;
 
-function displayHome() {
-  document.getElementById("home").style.display = "block";
+function hideAllPages() {
+  document.getElementById("home").style.display = "none";
   document.getElementById("skills").style.display = "none";
-  document.getElementById("known-languages").style.display = "none";
+  document.getElementById("languages").style.display = "none";
   document.getElementById("photography").style.display = "none";
+}
+
+function displayHome() {
+  hideAllPages();
+  document.getElementById("home").style.display = "block";
 }
 
 function displaySkills() {
-  console.warn("Trebuie sa afisam skills page");
-  document.getElementById("home").style.display = "none";
+  hideAllPages();
   document.getElementById("skills").style.display = "block";
-  document.getElementById("known-languages").style.display = "none";
-  document.getElementById("photography").style.display = "none";
 }
 
 function displayLanguages() {
-  document.getElementById("home").style.display = "none";
-  document.getElementById("skills").style.display = "none";
-  document.getElementById("known-languages").style.display = "block";
-  document.getElementById("photography").style.display = "none";
+  hideAllPages();
+  document.getElementById("languages").style.display = "block";
 }
 
 function displayPhotography() {
-  document.getElementById("home").style.display = "none";
-  document.getElementById("skills").style.display = "none";
-  document.getElementById("known-languages").style.display = "none";
+  hideAllPages();
   document.getElementById("photography").style.display = "block";
 }
 
