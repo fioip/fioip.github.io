@@ -31,4 +31,33 @@ for (i = 0; i < skillsP.length; i++) {
 
 skillsElP.innerHTML = skillsHTMLP;
 
-document.getElementById("home").style.display = "block";
+function displayHome() {
+  document.getElementById("home").style.display = "block";
+  document.getElementById("skills").style.display = "none";
+  document.getElementById("known-languages").style.display = "none";
+  document.getElementById("photography").style.display = "none";
+}
+
+function displaySkills() {
+  console.warn("Trebuie sa afisam skills page");
+  document.getElementById("home").style.display = "none";
+  document.getElementById("skills").style.display = "block";
+  document.getElementById("known-languages").style.display = "none";
+  document.getElementById("photography").style.display = "none";
+}
+
+function displayLanguages() {
+  document.getElementById("home").style.display = "none";
+  document.getElementById("skills").style.display = "none";
+  document.getElementById("known-languages").style.display = "block";
+  document.getElementById("photography").style.display = "none";
+}
+
+function displayPhotography() {
+  document.getElementById("home").style.display = "none";
+  document.getElementById("skills").style.display = "none";
+  document.getElementById("known-languages").style.display = "none";
+  document.getElementById("photography").style.display = "block";
+}
+
+displayHome();
