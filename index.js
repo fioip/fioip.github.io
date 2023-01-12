@@ -34,6 +34,11 @@ skillsElP.innerHTML = skillsHTMLP;
 var pageIds = ["home", "skills", "languages", "photography"];
 
 function hideAllPages() {
+  var pages = document.querySelectorAll(".page");
+  pages.forEach(function (page) {
+    hide(page.id);
+  });
+
   pageIds.forEach(function (pageId) {
     hide(pageId);
   });
