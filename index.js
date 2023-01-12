@@ -31,11 +31,14 @@ for (i = 0; i < skillsP.length; i++) {
 
 skillsElP.innerHTML = skillsHTMLP;
 
+var pageIds = ["home", "skills", "languages", "photography"];
+
+function hidePage(id) {
+  hide(id);
+}
+
 function hideAllPages() {
-  hide("home");
-  hide("skills");
-  hide("languages");
-  hide("photography");
+  pageIds.forEach(hidePage);
 }
 
 function show(id) {
