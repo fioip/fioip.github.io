@@ -32,14 +32,18 @@ for (i = 0; i < skillsP.length; i++) {
 skillsElP.innerHTML = skillsHTMLP;
 
 function hideAllPages() {
-  document.getElementById("skills").style.display = "none";
-  document.getElementById("languages").style.display = "none";
-  document.getElementById("home").style.display = "none";
-  document.getElementById("photography").style.display = "none";
+  hide("home");
+  hide("skills");
+  hide("languages");
+  hide("photography");
 }
 
 function show(id) {
   document.getElementById(id).style.display = "block";
+}
+
+function hide(id) {
+  document.getElementById(id).style.display = "none";
 }
 
 function displayHome() {
