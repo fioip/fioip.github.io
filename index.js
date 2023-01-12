@@ -51,5 +51,4 @@ function displayPage(id) {
   hideAllPages();
   show(id);
 }
-
 displayPage("home");
