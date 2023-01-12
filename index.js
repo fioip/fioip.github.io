@@ -33,12 +33,10 @@ skillsElP.innerHTML = skillsHTMLP;
 
 var pageIds = ["home", "skills", "languages", "photography"];
 
-function hidePage(id) {
-  hide(id);
-}
-
 function hideAllPages() {
-  pageIds.forEach(hidePage);
+  pageIds.forEach(function (pageId) {
+    hide(pageId);
+  });
 }
 
 function show(id) {
