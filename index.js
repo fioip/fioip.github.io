@@ -47,14 +47,6 @@ function hide(id) {
   document.getElementById(id).style.display = "none";
 }
 
-function displayLanguages() {
-  displayPage("languages");
-}
-
-function displayPhotography() {
-  displayPage("photography");
-}
-
 function displayPage(id) {
   hideAllPages();
   show(id);
