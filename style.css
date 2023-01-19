@@ -205,9 +205,10 @@ ul {
   padding: 0.5%;
 }
 
-.head {
+#header-wrapper {
+  display: flex;
+  flex-direction: row;
   padding: 10px 15px 20px 15px;
-  display: block;
   background-image: linear-gradient(
     to right,
     rgb(42, 142, 131),
@@ -215,7 +216,7 @@ ul {
   );
 }
 
-.head:hover {
+#header-wrapper:hover {
   background-image: linear-gradient(
     to right,
     rgb(78, 223, 206),
@@ -223,23 +224,23 @@ ul {
   );
 }
 
+.header-info {
+  flex: 1;
+  padding: 5px;
+  margin-left: 2%;
+  color: white;
+}
+
 .pp {
-  border-radius: 100%;
   border: 3px solid white;
-  height: 120px;
-  width: 100px;
-  float: left;
+  height: 108px;
+  width: 108px;
+  margin: 2px;
 }
 
 #job-title {
   font-style: italic;
   font-size: large;
-  margin-left: 6%;
-  color: white;
-}
-
-.fio {
-  margin-left: 6%;
   color: white;
 }
 
