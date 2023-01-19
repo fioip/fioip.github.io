@@ -17,13 +17,11 @@ var skills = [
   { name: "Bootstrap", endorcements: 2 },
 ];
 
-var skillsHTML = "";
-
-skills.forEach(function (skill) {
-  skillsHTML += "<li>" + skill.name + " ~ " + skill.endorcements + "</li>";
+var skillsHTML = skills.map(function (skill) {
+  return "<li>" + skill.name + " ~ " + skill.endorcements + "</li>";
 });
 
-skillsEl.innerHTML = skillsHTML;
+skillsEl.innerHTML = skillsHTML.join("");
 
 var skillsElP = document.getElementById("skills-list-photo");
 
