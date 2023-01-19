@@ -1,14 +1,5 @@
 var skillsEl = document.getElementById("skills-list");
 
-// var skills = [
-//   ["HTML", 5],
-//   ["CSS", 3],
-//   ["JS", 15],
-//   ["PHP", 7],
-//   ["Bootstrap", 20],
-// ];
-//var endorcements = [5, 6, 5, 1];
-
 var skills = [
   { name: "HTML", endorcements: 5 },
   { name: "CSS", endorcements: 7 },
@@ -18,7 +9,7 @@ var skills = [
 ];
 
 var skillsHTML = skills.map(function (skill) {
-  return "<li>" + skill.name + " ~ " + skill.endorcements + "</li>";
+  return `<li>  ${skill.name}   ~  <span> ${skill.endorcements} </span> </li>`;
 });
 
 skillsEl.innerHTML = skillsHTML.join("");

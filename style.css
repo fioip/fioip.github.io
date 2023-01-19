@@ -231,6 +231,14 @@ ul {
   color: white;
 }
 
+#skills-list span {
+  color: #0d685e;
+}
+
+#skills-list li {
+  font-weight: 200;
+}
+
 .pp {
   border: 3px solid white;
   height: 108px;
