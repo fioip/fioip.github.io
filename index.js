@@ -54,6 +54,16 @@ function displayPage(id) {
   show(id);
 }
 
+function displayCatInverted() {
+  document.getElementById("imageMain").style.display = "none";
+  document.getElementById("imageHover").style.display = "block";
+}
+
+function displayCat() {
+  document.getElementById("imageHover").style.display = "none";
+  document.getElementById("imageMain").style.display = "block";
+}
+
 function initMenu() {
   document
     .getElementById("top-menu-bar")
@@ -66,5 +76,5 @@ function initMenu() {
     });
 }
 
-displayPage("skills");
+displayPage("home");
 initMenu();
