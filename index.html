@@ -19,21 +19,10 @@
             Student at Ieti - Calculatoare @ photographer @ gamer
           </h2>
         </div>
-
-        <div class="figures">
-          <img
-            onclick="displayCatInverted()"
-            src="images/cat.png"
-            alt="poza"
-            id="imageMain"
-          />
-          <img
-            onclick="displayCat()"
-            src="images/cat-inverted.png"
-            alt="poza"
-            id="imageHover"
-          />
-        </div>
+        <label class="switch">
+          <input type="checkbox" id="remember" onclick="darkTheme()" />
+          <span class="slider"></span>
+        </label>
       </div>
 
       <ul id="top-menu-bar">
@@ -51,7 +40,7 @@
 
     <section id="content">
       <div id="side-menu">
-        <section class="page-left">
+        <section id="page-left">
           <h2 class="page-heading">Subscriber email</h2>
           <form action="">
             <div>
@@ -75,18 +64,22 @@
                 placeholder="full name"
               />
             </div>
-
             <button type="submit" class="sbutton">Subscribe</button>
           </form>
         </section>
+        <div class="figures">
+          <img src="images/cat.png" alt="poza" id="imageMain" />
+          <img src="images/cat-inverted.png" alt="poza" id="imageHover" />
+        </div>
       </div>
 
       <div id="main">
         <!-- HOME -->
         <div id="home" class="page">
           <h2 class="page-heading">HOME</h2>
-          <div class="main-text">
+          <div id="main-text">
             <h3 class="skills-head">Hi there!</h3>
+
             <p>
               This page is about me, an 18 year old student who likes to take
               photos and would like that passion to be a further job.
