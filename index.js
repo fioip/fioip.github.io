@@ -1,12 +1,10 @@
-var skillsEl = document.getElementById("skills-list");
+const skillsEl = document.getElementById("skills-list");
 
 var skills = [];
 
-var r1 = fetch("skills.json");
+const r1 = fetch("skills.json");
 r1.then(function (raspuns) {
   var r2 = raspuns.json();
-  console.warn("gata?", r2);
-
   r2.then(function (skills) {
     displaySkills(skills);
   });
@@ -38,7 +36,7 @@ var skillsHTMLP = skillsP.map(function (skillP) {
 skillsElP.innerHTML = skillsHTMLP.join("");
 
 function hideAllPages() {
-  var pages = document.querySelectorAll(".page");
+  const pages = document.querySelectorAll(".page");
   pages.forEach(function (page) {
     hide(page.id);
   });
@@ -84,7 +82,7 @@ function initMenu() {
     .addEventListener("click", function (e) {
       if (e.target.matches("a")) {
         // var id = e.target.getAttribute("data-page");
-        var id = e.target.dataset.page;
+        const id = e.target.dataset.page;
         displayPage(id);
       }
     });
