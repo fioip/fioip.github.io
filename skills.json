@@ -1,0 +1,7 @@
+[
+  { "name": "HTML", "endorcements": 5 },
+  { "name": "CSS", "endorcements": 7 },
+  { "name": "JS", "endorcements": 15 },
+  { "name": "PHP", "endorcements": 8 },
+  { "name": "Bootstrap", "endorcements": 2 }
+]

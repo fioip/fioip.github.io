@@ -1,18 +1,24 @@
 var skillsEl = document.getElementById("skills-list");
 
-var skills = [
-  { name: "HTML", endorcements: 5 },
-  { name: "CSS", endorcements: 7 },
-  { name: "JS", endorcements: 15 },
-  { name: "PHP", endorcements: 8 },
-  { name: "Bootstrap", endorcements: 2 },
-];
+var skills = [];
 
-var skillsHTML = skills.map(function (skill) {
-  return `<li>  ${skill.name}   ~  <span> ${skill.endorcements} </span> </li>`;
+var r1 = fetch("skills.json");
+r1.then(function (raspuns) {
+  var r2 = raspuns.json();
+  console.warn("gata?", r2);
+
+  r2.then(function (skills) {
+    displaySkills(skills);
+  });
 });
 
-skillsEl.innerHTML = skillsHTML.join("");
+function displaySkills(skills) {
+  var skillsHTML = skills.map(function (skill) {
+    return `<li>  ${skill.name}   ~  <span> ${skill.endorcements} </span> </li>`;
+  });
+
+  skillsEl.innerHTML = skillsHTML.join("");
+}
 
 var skillsElP = document.getElementById("skills-list-photo");
 
