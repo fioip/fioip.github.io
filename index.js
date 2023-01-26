@@ -1,5 +1,3 @@
-const skillsEl = document.getElementById("skills-list");
-
 var skills = [];
 
 const r1 = fetch("skills.json");
@@ -11,10 +9,11 @@ r1.then((raspuns) => {
 });
 
 function displaySkills(skills) {
-  var skillsHTML = skills.map((skill) => {
-    return `<li>  ${skill.name}   ~  <span> ${skill.endorcements} </span> </li>`;
-  });
-
+  const skillsHTML = skills.map(
+    (skill) =>
+      `<li>  ${skill.name}   ~  <span> ${skill.endorcements} </span> </li>`
+  );
+  const skillsEl = document.getElementById("skills-list");
   skillsEl.innerHTML = skillsHTML.join("");
 }
 
@@ -37,7 +36,7 @@ skillsElP.innerHTML = skillsHTMLP.join("");
 
 function hideAllPages() {
   const pages = document.querySelectorAll(".page");
-  pages.forEach((page) => {
+  pages.forEach((page, i) => {
     hide(page.id);
   });
 }
@@ -82,13 +81,6 @@ function darkTheme() {
     document.getElementById("imageHover").style.display = "block";
   } else {
     document.body.classList.remove("darkTheme");
-
-    // document.getElementById("content").style.background = "#f3f2ef";
-    // document.getElementById("header-wrapper").style.background = "#34dbc8";
-    // document.getElementById("top-menu-bar").style.background = "#0d685e";
-    // document.getElementById("page-left").style.background = "white";
-    // document.getElementById("home").style.background = "white";
-    // document.getElementById("main-text").style.color = "black";
 
     document.getElementById("imageHover").style.display = "none";
     document.getElementById("imageMain").style.display = "block";
