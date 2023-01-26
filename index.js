@@ -53,27 +53,19 @@ function displayPage(id) {
 
 function darkTheme() {
   if (document.getElementById("remember").checked) {
-    document.getElementById("content").style.background = "#1E1F1F";
-    document.getElementById("header-wrapper").style.background = "#1f7067";
-    document.getElementById("top-menu-bar").style.background = "#02211D";
-    document.getElementById("page-left").style.background = "#3E4343";
-    document.getElementById("home").style.background = "#3E4343";
-    document.getElementById("skills").style.background = "#3E4343";
-    document.getElementById("languages").style.background = "#3E4343";
-    document.getElementById("photography").style.background = "#3E4343";
-    document.getElementById("rubik").style.background = "#3E4343";
-    document.getElementById("main-text").style.color = "white";
-    document.getElementById("main-text").style.color = "white";
+    document.body.classList.add("darkTheme");
 
     document.getElementById("imageMain").style.display = "none";
     document.getElementById("imageHover").style.display = "block";
   } else {
-    document.getElementById("content").style.background = "#f3f2ef";
-    document.getElementById("header-wrapper").style.background = "#34dbc8";
-    document.getElementById("top-menu-bar").style.background = "#0d685e";
-    document.getElementById("page-left").style.background = "white";
-    document.getElementById("home").style.background = "white";
-    document.getElementById("main-text").style.color = "black";
+    document.body.classList.remove("darkTheme");
+
+    // document.getElementById("content").style.background = "#f3f2ef";
+    // document.getElementById("header-wrapper").style.background = "#34dbc8";
+    // document.getElementById("top-menu-bar").style.background = "#0d685e";
+    // document.getElementById("page-left").style.background = "white";
+    // document.getElementById("home").style.background = "white";
+    // document.getElementById("main-text").style.color = "black";
 
     document.getElementById("imageHover").style.display = "none";
     document.getElementById("imageMain").style.display = "block";
@@ -94,3 +86,7 @@ function initMenu() {
 
 displayPage("home");
 initMenu();
+
+// TODO add local storage
+// document.getElementById("remember").checked = true;
+darkTheme();

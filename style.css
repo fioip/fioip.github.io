@@ -40,6 +40,46 @@ body {
   padding-top: 10px;
 }
 
+.darkTheme #content {
+  background: #1e1f1f;
+}
+
+.darkTheme #header-wrapper {
+  background: #1f7067;
+}
+
+.darkTheme #top-menu-bar {
+  background: #02211d;
+}
+
+.darkTheme #page-left {
+  background: #3e4343;
+}
+
+.darkTheme #home {
+  background: #3e4343;
+}
+
+.darkTheme #skills {
+  background: #3e4343;
+}
+
+.darkTheme #languages {
+  background: #3e4343;
+}
+
+.darkTheme #photography {
+  background: #3e4343;
+}
+
+.darkTheme #rubik {
+  background: #3e4343;
+}
+
+.darkTheme #main-text {
+  color: white;
+}
+
 #side-menu {
   flex: 1;
 }
